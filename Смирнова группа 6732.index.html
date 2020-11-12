@@ -1,0 +1,529 @@
+<html lang="ru">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html">
+<title>ProTM</title>
+<link rel="shortcut icon" type="image/x-icon" href="img/pro.jpg">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    
+<style>
+    
+    input, textarea {   max-width:100%; }
+ 
+/* Цвет фона сайта */
+body {
+background-color: #de2f2f ; 
+}
+/* Цвет фона сайта */
+    
+/* Оформление меню сайта */ 
+   .mainmenubtn {
+       font: 18px bold;
+    background-color: white;
+    color: #de2f2f;
+    border: none;
+    cursor: pointer;
+    padding:20px;
+    margin-top:20px;
+}
+
+.mainmenubtn:hover {
+    background-color: white;
+    color: #de2f2f;
+    }
+    
+.dropdown {
+    position: relative;
+    display: block;
+}
+.dropdown-child {
+    font: 14px bold;
+    display: none;
+    background-color: white;
+    width: 40%;
+}
+.dropdown-child a {
+    color: black;
+    padding: 20px;
+    margin: 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+    .dropdown-child a:hover {
+        background-color: #de2f2f;
+        color: white;
+    }
+    
+.dropdown:hover .dropdown-child {
+    display: block;
+    
+}
+/* Оформление меню сайта */
+    
+ /* Первый раздел страницы */   
+       .content
+{
+font: 24px Verdana, Arial, Helvetica, sans-serif;
+text-align: center;
+    color: white;
+}  
+    .logo {
+    margin-top: 20px;
+    margin-bottom: 60px;
+ text-align: center;
+ background-size: cover;
+}
+    .logo img
+{
+max-width: 100%;
+border-radius: 200px; /* CSS3 */
+}
+ /* Первый раздел страницы */    
+ 
+/* Второй раздел страницы */ 
+.content2
+{
+font: 30px Verdana, Arial, Helvetica, sans-serif;
+    text-align: center;
+    color:#de2f2f;
+    font-weight: bold;
+}
+.border {
+        list-style: none;
+padding: 0;}
+    .border li {
+        text-align: center;
+font-family: "Trebuchet MS", "Lucida Sans";
+padding: 7px 20px;
+margin-bottom: 20px;
+border-radius: 5px;
+border-left: 10px solid #f05d22; 
+box-shadow: 2px -2px 5px 0 rgba(0,0,0,.1),
+     -2px -2px 5px 0 rgba(0,0,0,.1),
+    2px 2px 5px 0 rgba(0,0,0,.1),
+    -2px 2px 5px 0 rgba(0,0,0,.1);
+font-size: 20px;
+letter-spacing: 2px;
+transition: 0.3s all linear;
+}
+.border li:nth-child(2){border-color: #8bc63e;}
+.border li:nth-child(3){border-color: #fcba30;}
+.border li:nth-child(4){border-color: #1ccfc9;}
+.border li:nth-child(5){border-color: #493224;}
+.border li:hover {border-left: 10px solid transparent;}
+.border li:nth-child(1):hover {border-right: 10px solid #f05d22;}
+.border li:nth-child(2):hover {border-right: 10px solid #8bc63e;}
+.border li:nth-child(3):hover {border-right: 10px solid #fcba30;}
+.border li:nth-child(4):hover {border-right: 10px solid #1ccfc9;}
+.border li:nth-child(5):hover {border-right: 10px solid #493224;}
+ /* Второй раздел страницы */    
+ 
+/* Третий раздел страницы */ 
+   .hr {
+        text-align: center;
+    margin: 0; /* Обнуляем значение отступов */
+    padding: 4px; /* Значение полей */
+   }
+   .hr li {
+    display: inline; /* Отображать как строчный элемент */
+    margin-right: 5px; /* Отступ слева */
+    border: 2px solid white; /* Рамка вокруг текста */
+    padding: 10px; /* Поля вокруг текста */
+       font: 20px bold;
+       color:aliceblue;
+       font-weight: 400;
+       margin-top: 25px;
+   }
+    .hr p {
+        text-align:justify;
+        font: 18px bold;
+        color:whitesmoke;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+/* Третий раздел страницы */ 
+  
+/* Пятый раздел страницы */
+    .wrp {
+	max-width: 900px;
+	margin: 0 auto;
+	position: relative;
+}
+.map-box { 
+	position: absolute;
+	top: 70px;
+	right: 20px; 
+	padding: 20px;
+	background: #fff;
+	border: 1px solid #ddd;
+	z-index: 100;
+	width: 250px;
+	box-shadow: -1px -1px 24px 0px rgba(50, 50, 50, 0.5);
+}
+.map-box p {
+	font-size: 18px;
+}
+#map {
+	width: 100%; 
+	height: 350px;
+}
+/* Пятый раздел страницы */
+    
+/* Шестой раздел страницы */
+     /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+width: 100%; /* Full width */
+padding: 12px; /* Some padding */
+border: 1px solid #ccc; /* Gray border */
+border-radius: 4px; /* Rounded borders */
+box-sizing: border-box; /* Make sure that padding and width stays in place */
+margin-top: 6px; /* Add a top margin */
+margin-bottom: 16px; /* Bottom margin */
+resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+background-color: #de2f2f;
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker black color */
+input[type=submit]:hover {
+background-color: black;
+}
+
+/* Add a background color and some padding around the form */
+.container2 {
+    margin-top: 60px;
+border-radius: 5px;
+background-color: #f2f2f2;
+padding: 20px;
+}
+    
+body {
+	font-size:14px;
+}
+/* Шестой раздел страницы */
+    
+    
+ /* Социальные сети */   
+  a{
+  text-decoration: none;
+}
+.share-buttons{
+   
+	max-width: 300px;
+  margin-left: 0;
+}
+.share-block{
+  display: inline-block;
+	background: #fff;
+	width: 25px;
+	height: 25px;
+	margin-bottom: 16px;
+	border: 1px solid #ccc;
+	text-align: center;
+	transition: 0.5s;
+}
+.share-block:hover{
+	animation: share-animation 0.82s cubic-bezier(.36,.07,.19,.97) both;
+	border-color: #0c7fd7;
+}
+
+
+.share-block i{
+	font-size: 12px;
+	position: relative;
+	top: 5px;
+}
+.share-block span{
+	display: block;
+	position: relative;
+	top: -9px;
+	font-size: 10px;
+	line-height: 1;
+}
+.share-buttons .facebook{
+	color: #3b5998;
+}
+.share-buttons .vk{
+	color: #5E82A8;
+}
+.share-buttons  .linkedin{
+	color: #0976b4;
+}
+.share-buttons .pinterest{
+	color: #cc2127;
+}
+.share-buttons .google{
+	color: #d73925;
+}
+.share-buttons .twitter{
+	color: #55acee;
+}
+
+@keyframes share-animation {
+	10%, 90% {
+		transform: translate3d(-1px, 0, 0);
+	}
+
+	20%, 80% {
+		transform: translate3d(2px, 0, 0);
+	}
+
+	30%, 50%, 70% {
+		transform: translate3d(-4px, 0, 0);
+	}
+
+	40%, 60% {
+		transform: translate3d(4px, 0, 0);
+	}
+}  
+ /* Социальные сети */ 
+    
+ /* Кнопка вверх */    
+            #myBtn {
+    max-width: 10px;
+        position: fixed;
+        bottom: 10px;
+        float: left;
+        right: 95%;
+        left: 5%;
+        width: 50%;
+               background:transparent;
+                border: none;
+ }
+    
+    #myBtn img:hover {
+      opacity: 90%;  
+    }
+    
+    #myBtn img {
+        
+        opacity: 50%;
+        padding: 10px;
+              width: 40px;
+        height: 40px;
+    }
+ /* Кнопка вверх */ 
+    
+.footer
+{
+width:100%;
+text-align:center;
+margin-top:20px;
+}
+.footer p, .footer a
+{
+font: 14px Verdana, Arial, Helvetica, sans-serif;
+color:#444;
+}
+
+.footer a
+{
+text-decoration: none;
+border-bottom:1px dotted #444;
+}
+
+.footer a:hover
+{
+text-decoration: none;
+border:0px;
+}
+{
+margin:0px ;
+padding:0px;
+}
+    
+</style>
+</head>
+    
+<body>
+    
+<div class="dropdown">
+    <button class="mainmenubtn">Главное меню</button>
+    <div class="dropdown-child">
+<a href="%D0%A1%D0%BC%D0%B8%D1%80%D0%BD%D0%BE%D0%B2%D0%B0%20%D0%B3%D1%80%D1%83%D0%BF%D0%BF%D0%B0%206732.index.html">На главную</a> 
+<a href="%D0%9E%20%D0%BD%D0%B0%D1%81.html">О нас</a>
+<a href="%D0%A3%D1%81%D0%BB%D1%83%D0%B3%D0%B8.html">Услуги</a>
+<a href="#contact">Контакты</a>
+    </div>
+</div>  
+    
+    
+<div class="content">
+<h1>Мы Pro-TM</h1>
+    </div>
+    
+    <div>
+<h2 style="font: 30px Verdana, Arial, Helvetica, sans-serif; text-align: center; color:white">Трейд-маркетинговое агенство</h2>
+</div>
+    
+    <div class="logo">
+<img src="img\tm.jpg" >
+</div>
+    
+    <div style="background-color: white">
+    <p class="content2">Основные компетенции</p>
+        <ul class="border">
+  <li>Продавцы-консультанты</li>
+  <li>Тайный покупатель</li>
+  <li>Мерчандайзинг</li>
+  <li>Промоакции и дегустации</li>
+  <li>POSM и оборудование</li>
+</ul>
+    </div>
+    
+    <div>
+        <p class="content2" style="color: white">Почему выбирают нас</p> 
+         <ul class="hr">     
+             <li> Опыт с 2008 года </li>
+       <p>По продвижению российских и зарубежных брендов, товаров и услуг на территории России. Ресурсы компании позволяют нашим клиентам пользоваться более 50 услугами и 6 сервисами по продвижению бизнеса.</p>
+             <li> Экспертный рекрутинг</li>
+             <p>Квалифицированные специалисты отдела рекрутинга имеют все необходимые ресурсы и технологии для оперативного подбора персонала на проект любого уровня и масштаба. </p>
+            <li>Автоматизация бизнеса</li>
+             <p>Команда разработчиков и специалистов помогает реализовать процессы и задачи для автоматизации и повышения эффективности любого проекта. Создаем и реализуем решения на платформах: iOs, Android. </p>
+            <li>Индивидуальные решения</li>
+             <p> Понимание особенностей российского рынка дает нам возможность предлагать и применять лучшие маркетинговые стратегии и тактики по продвижению, что позволит достичь поставленных целей в кратчайшие сроки.</p>
+  </ul>
+    </div>
+    
+    <div style="background-color: white" class="logo">
+        <p class="content2">Мы уже работаем, присоединяйтесь и Вы!</p>
+        <img src="img\rabota.jpg">
+    </div>
+    
+<div class="map">	
+	<div class="wrp">
+		<div class="map-box">
+			<h2><a name="contact"></a>Наши контакты</h2>
+			<p>г. Москва, Тверская 7</p>
+			<p><a href="tel:+7 (495) 123-45-67">+7 (495) 123-45-67</a></p>
+			<p><a href="mailto:info@site.com">info@site.com</a></p>
+		</div>
+	</div>
+	<div id="map"></div>
+</div>
+   <script src="https://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU"></script> 
+    <script>
+        ymaps.ready(init); 
+function init(){
+	var myMap = new ymaps.Map("map",{center: [55.85,37.45],zoom: 13});
+	
+	// Элементы управления картой
+	//myMap.controls.add("zoomControl").add("typeSelector").add("mapTools");
+	
+	ymaps.geocode("г. Москва, Тверская 7").then(function (res) {
+		var coord = res.geoObjects.get(0).geometry.getCoordinates();
+		var myPlacemark = new ymaps.Placemark(coord, {}, {
+			iconImageHref: "/img/map.png",
+			iconImageSize: [54, 74],
+			iconImageOffset: [-27, -74]
+		});
+		myMap.geoObjects.add(myPlacemark);
+		myMap.setCenter(coord);	
+			
+		// Сдвиг центра карты влево
+		var newcoord = myMap.getGlobalPixelCenter();
+		newcoord[0] += 150;
+		myMap.setGlobalPixelCenter(newcoord);				
+	});
+}
+    </script> 
+            
+   <div class="container2">
+<form action="action_page.php">
+
+<label for="fname">Имя</label>
+<input type="text" id="fname" name="firstname" placeholder="Ваше имя...">
+
+<label for="lname">Фамилия</label>
+<input type="text" id="lname" name="lastname" placeholder="Ваша фамилия...">
+
+<label for="country">Email</label>
+<input type="text" name="Email" placeholder="Ваш email...">
+
+<label for="subject"></label>
+<textarea id="subject" placeholder="Напишите Ваш вопрос..." style="height:200px"></textarea>
+
+<input type="submit" value="Отправить">
+
+</form>
+</div>
+
+ <div class="share-buttons">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <a class="share-btn-fb" href="http://www.facebook.com/sharer/sharer.php?s=100&p%5Btitle%5D=[TITLE]&p%5Bsummary%5D=[TEXT]&p%5Burl%5D=[LINK]&p%5Bimages%5D%5B0%5D=[IMAGE]" target="_blank" onclick="return Share.me(this);">
+        <div class="facebook share-block">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+        </div>
+    </a>
+
+    <a href="https://plus.google.com/share?url=[LINK]" target="_blank" onclick="return Share.me(this);">
+        <div class="google share-block">
+            <i class="fa fa-google-plus" aria-hidden="true"></i>
+        </div>
+    </a>
+    <a class="share-btn-in" href="https://www.linkedin.com/cws/share?url=[LINK]" target="_blank" onclick="return Share.me(this);">
+        <div class="linkedin share-block">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </div>
+    </a>
+    <a class="share-btn-p" href="https://www.pinterest.com/pin/create/bookmarklet/?description=<?=get_the_title($id)?>&url=[LINK]" target="_blank" onclick="return Share.me(this);">
+        <div class="pinterest share-block">
+            <i class="fa fa-pinterest" aria-hidden="true"></i>
+        </div>
+    </a>
+    <a class="share-btn-vk" href="https://vk.com/share.php?url=[LINK]" target="_blank" onclick="return Share.me(this);">
+        <div class="vk share-block">
+            <i class="fa fa-vk" aria-hidden="true"></i>
+        </div>
+    </a>
+
+    <a href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Ffiddle.jshell.net%2F_display%2F&text=[TITLE]&url=[LINK]" target="_blank" onclick="return Share.me(this)">
+        <div class="twitter share-block">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+        </div>
+    </a>
+</div>
+<!-- Поделиться вк -->
+   
+<script type="text/javascript" src="https://vk.com/js/api/share.js?95" charset="windows-1251"></script>
+
+<!-- Put this script tag to the place, where the Share button will be -->
+<script type="text/javascript"><!--
+document.write(VK.Share.button(false,{type: "round", text: "Сохранить"}));
+--></script>
+    
+    <!-- Put this script tag to the <head> of your page -->
+<script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+
+<script type="text/javascript">
+  VK.init({apiId: API_ID, onlyWidgets: true});
+</script>
+
+<!-- Комментарии вк -->
+<div id="vk_comments"></div>
+<script type="text/javascript">
+VK.Widgets.Comments("vk_comments", {limit: 10, attach: "*"});
+</script>
+   
+    <!-- Кнопка наверх -->
+    
+    <button id="myBtn"><a href="#top"><img src="img\up.png" alt="Стрелка"></a></button>
+       
+     <!-- Кнопка наверх -->
+    
+  <div class="footer">  
+      <p><a href="https://vk.com/albina_smirnova99">SmirnovaAlbina.com</a> © 2020</p>
+  
+</div>
+</body>
+</html>
